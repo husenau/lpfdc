@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Place Family Day Care | Coburg North</title>
+<meta name="description" content="Home-based family day care in Coburg North, run by a qualified early childhood educator. Registered with Foundations Family Day Care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFF8EE;--sand:#FCE3B0;--teal:#1E6B73;--coral:#E8573A;--coral-d:#C0411F;--sun:#F5B83D;--ink:#17383C}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Nunito',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:'Fredoka',sans-serif;font-weight:600;line-height:1.1;margin:0;color:var(--teal)}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.eyebrow{font-weight:800;letter-spacing:.25em;font-size:14px;color:var(--coral-d);text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(34px,5vw,52px);margin-bottom:20px}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(255,248,238,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--sand)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Fredoka';font-weight:600;font-size:22px;color:var(--teal)}
+.brand svg{width:38px;height:38px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:700;font-size:16px}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--coral-d)}
+.btn{display:inline-block;background:var(--coral-d);color:#fff;font:800 17px 'Nunito';border:0;border-radius:999px;padding:14px 30px;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 5px 0 #8f2f15}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 0 #8f2f15}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #8f2f15}
+/* hero */
+.hero{padding:56px 0 110px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,84px);margin-bottom:18px}
+.hero p{max-width:480px;font-size:20px}
+.hero .cta{display:flex;gap:18px;align-items:center;margin-top:28px;flex-wrap:wrap}
+.pill{display:inline-block;background:var(--sand);border-radius:999px;padding:6px 16px;font-weight:800;font-size:15px}
+.art{position:relative;display:grid;place-items:center}
+.art svg.house{width:min(380px,80%);animation:bob 5s ease-in-out infinite}
+.sun{animation:spin 18s linear infinite;transform-origin:100px 24px}
+.blob{position:absolute;border-radius:50%;z-index:-1}
+.b1{width:120px;height:120px;background:var(--sand);top:0;left:6%;animation:float 7s ease-in-out infinite}
+.b2{width:70px;height:70px;background:var(--sun);opacity:.7;bottom:8%;right:4%;animation:float 6s ease-in-out infinite reverse}
+.b3{width:46px;height:46px;background:var(--coral);opacity:.5;top:20%;right:2%;animation:float 8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-14px) rotate(1.5deg)}}
+@keyframes float{50%{transform:translateY(-22px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:70px;display:block}
+/* highlights */
+.band{background:var(--teal);color:#fff;padding:0}
+.band .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:44px;padding-bottom:56px;text-align:center}
+.band strong{display:block;font:600 34px 'Fredoka';color:var(--sun)}
+.band span{font-size:16px}
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about ul{padding:0;list-style:none;margin:22px 0 0;display:grid;gap:12px}
+.about li{display:flex;gap:12px;align-items:flex-start;font-weight:700}
+.about li::before{content:"";flex:none;width:14px;height:14px;margin-top:7px;border-radius:50%;background:var(--coral)}
+/* image slots: swap each .ph for <img src="..." alt="..."> */
+.ph{background:var(--sand);border:3px dashed #E0A94A;border-radius:28px;display:grid;place-items:center;text-align:center;color:#7a5a12;font-weight:800;font-size:15px;padding:16px;min-height:200px;overflow:hidden}
+.ph small{display:block;font-weight:600;opacity:.8}
+img.slot{width:100%;height:100%;object-fit:cover;border-radius:28px;display:block}
+.tall{min-height:440px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:210px;gap:18px;margin-top:30px}
+.gal .ph{min-height:0;transition:transform .3s}
+.gal .ph:hover{transform:rotate(-1.5deg) scale(1.02)}
+.gal .big{grid-row:span 2}.gal .wide{grid-column:span 2}
+.day{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:34px}
+.step{background:var(--cream);border-radius:24px;padding:24px;border:2px solid var(--sand);transition:transform .25s}
+.step:hover{transform:translateY(-8px)}
+.step b{display:block;font:600 15px 'Fredoka';color:var(--coral-d);letter-spacing:.1em}
+.step h3{font-size:24px;margin:6px 0 8px}
+.step p{margin:0;font-size:16px}
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+form{background:#fff;border:2px solid var(--sand);border-radius:28px;padding:34px;display:grid;gap:16px;grid-template-columns:1fr 1fr}
+form .full{grid-column:1/-1}
+label{font-weight:800;font-size:15px;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:12px 14px;border:2px solid #E8D5B0;border-radius:14px;background:var(--cream);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--sun);border-color:var(--teal)}
+.hp{position:absolute;left:-9999px}
+#status{font-weight:800;min-height:1.6em}
+.facts{margin-top:24px;display:grid;gap:10px;font-weight:700}
+footer{background:var(--ink);color:#e9efe9;text-align:center;padding:36px 24px;font-size:15px}
+footer a{color:var(--sun)}
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+@media(max-width:820px){nav ul{display:none}.hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr}.band .wrap,.steps{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}.tall{min-height:280px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top" aria-label="Little Place Family Day Care home">
+<svg viewBox="0 0 120 120" aria-hidden="true"><rect x="28" y="58" width="64" height="44" rx="12" fill="#FCE3B0"/><path d="M14 64 L60 22 L106 64" fill="none" stroke="#E8573A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><circle cx="47" cy="76" r="7" fill="#1E6B73"/><path d="M35 100 a12 12 0 0 1 24 0Z" fill="#1E6B73"/><circle cx="72" cy="87" r="5" fill="#E8573A"/><path d="M64 100 a8 8 0 0 1 16 0Z" fill="#E8573A"/></svg>
+Little Place</a>
+<ul><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#day">A day with us</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" style="padding:10px 22px;font-size:15px" href="#contact">Enquire</a>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap">
+<div>
+<div class="eyebrow">Family Day Care · Coburg North</div>
+<h1>A little place to grow, play and belong.</h1>
+<p>Small-group, home-based care led by a qualified early childhood educator, so every child is known, loved and learning.</p>
+<div class="cta"><a class="btn" href="#contact">Join the waitlist</a><span class="pill">Mon–Fri · 8am–5pm</span></div>
+</div>
+<div class="art">
+<svg class="house" viewBox="0 0 120 120" role="img" aria-label="A little house sheltering an adult and a child">
+<g class="sun"><circle cx="100" cy="24" r="7" fill="#F5B83D"/></g>
+<rect x="28" y="58" width="64" height="44" rx="12" fill="#FCE3B0"/>
+<path d="M14 64 L60 22 L106 64" fill="none" stroke="#E8573A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="47" cy="76" r="7" fill="#1E6B73"/><path d="M35 100 a12 12 0 0 1 24 0Z" fill="#1E6B73"/>
+<circle cx="72" cy="87" r="5" fill="#E8573A"/><path d="M64 100 a8 8 0 0 1 16 0Z" fill="#E8573A"/>
+</svg>
+</div>
+</div>
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C240 90 480 0 720 35 S1200 80 1440 30 V70 H0Z" fill="#1E6B73"/></svg>
+</header>
+
+<div class="band"><div class="wrap">
+<div class="rv"><strong>Exceeding</strong><span>National Quality Standard overall rating</span></div>
+<div class="rv d1"><strong>20+ yrs</strong><span>Early childhood experience</span></div>
+<div class="rv d2"><strong>CCS</strong><span>Eligible families can apply</span></div>
+<div class="rv d3"><strong>Small</strong><span>Home-based group sizes</span></div>
+</div></div>
+
+<section class="about" id="about"><div class="wrap">
+<div class="rv">
+<div class="eyebrow">Meet your educator</div>
+<h2>Qualified, experienced and a mum too.</h2>
+<p>Little Place is run by an educator with a Bachelor of Early Education, a Master in Special Education and more than 20 years across child care centres, preschool and family day care. She's also a mother of two, so she knows what matters to families.</p>
+<ul>
+<li>Registered with Foundations Family Day Care, an approved service</li>
+<li>Rated Exceeding for educational program and relationships with children</li>
+<li>Warm, inclusive care that supports every child's needs</li>
+</ul>
+</div>
+<div class="rv d1 ph tall" id="img-educator">Photo: educator &amp; children<small>Replace this box with &lt;img class="slot"&gt;</small></div>
+</div></section>
+
+<section id="gallery" style="background:var(--cream);padding-top:20px"><div class="wrap">
+<div class="rv"><div class="eyebrow">Life at Little Place</div><h2>Our home, our garden, our days.</h2></div>
+<div class="gal">
+<div class="ph big rv">Photo: playroom</div>
+<div class="ph rv d1">Photo: art &amp; craft</div>
+<div class="ph rv d2">Photo: garden play</div>
+<div class="ph wide rv d1">Photo: story time</div>
+<div class="ph rv d2">Photo: outdoor walk</div>
+</div></div></section>
+
+<section class="day" id="day"><div class="wrap">
+<div class="rv"><div class="eyebrow">A day with us</div><h2>Gentle routines, lots of play.</h2><p style="max-width:560px">A predictable rhythm helps little ones feel safe. Here is a sample day; it flexes to suit the children in care.</p></div>
+<div class="steps">
+<div class="step rv"><b>8:00</b><h3>Hello &amp; free play</h3><p>A warm welcome and time to settle in.</p></div>
+<div class="step rv d1"><b>10:00</b><h3>Learn &amp; explore</h3><p>Play-based activities, music and outdoors.</p></div>
+<div class="step rv d2"><b>12:00</b><h3>Lunch &amp; rest</h3><p>Shared meals and a quiet sleep or rest time.</p></div>
+<div class="step rv d3"><b>3:00</b><h3>Stories &amp; wind down</h3><p>Creative play until pick-up at 5pm.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="rv">
+<div class="eyebrow">Get in touch</div>
+<h2>Say hello.</h2>
+<p>We're currently full, but we'd love to hear from you. Send an enquiry and we'll add you to the waitlist and let you know when a place opens.</p>
+<div class="facts"><div>📍 Coburg North, VIC 3058</div><div>🕗 Monday to Friday, 8am–5pm</div></div>
+</div>
+<form id="enquiry" class="rv d1" novalidate>
+<div><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+<div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+<div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+<div><label for="age">Child's age</label><input id="age" name="child_age" placeholder="e.g. 2 years"></div>
+<div class="full"><label for="start">Preferred start date</label><input id="start" name="start_date" type="date"></div>
+<div class="full"><label for="msg">Message</label><textarea id="msg" name="message" rows="4" placeholder="Days needed, questions, anything we should know"></textarea></div>
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="full"><button class="btn" type="submit" id="send">Send enquiry</button></div>
+<div class="full" id="status" role="status" aria-live="polite"></div>
+</form>
+</div></section>
+
+<footer>© <span id="yr"></span> Little Place Family Day Care · Coburg North, VIC · Registered with Foundations Family Day Care</footer>
+
+<script>
+// 1) Paste your Google Apps Script web app URL here (see setup steps).
+const SHEET_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.15});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+const form = document.getElementById('enquiry'), status = document.getElementById('status'), btn = document.getElementById('send');
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!form.name.value.trim() || !/^\S+@\S+\.\S+$/.test(form.email.value)) { status.textContent = 'Please add your name and a valid email.'; return; }
+  if (form.website.value) return; // honeypot
+  if (SHEET_URL.startsWith('PASTE')) { status.textContent = 'Form not connected yet: add the Apps Script URL in index.html.'; return; }
+  btn.disabled = true; status.textContent = 'Sending…';
+  try {
+    await fetch(SHEET_URL, { method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(form)) });
+    form.reset(); status.textContent = 'Thank you! We\u2019ll be in touch soon.';
+  } catch { status.textContent = 'Sorry, something went wrong. Please try again.'; }
+  btn.disabled = false;
+});
+</script>
+</body>
+</html>
